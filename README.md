@@ -1,5 +1,5 @@
 # modelsconverter
-.Net project for convert objects
+.Net project for convert objects.
 For example:
 You have 2 classes Address and AddressViewModel. 
 For convert this 2 classes, you need create class, which which will be inherited from BaseCollectionConverter, 
