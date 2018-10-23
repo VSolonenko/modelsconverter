@@ -1,0 +1,8 @@
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\bin\Debug\netstandard2.0\ModelsConverter.deps.json
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\bin\Debug\netstandard2.0\ModelsConverter.dll
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\bin\Debug\netstandard2.0\ModelsConverter.pdb
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\obj\Debug\netstandard2.0\ModelsConverter.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\obj\Debug\netstandard2.0\ModelsConverter.AssemblyInfoInputs.cache
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\obj\Debug\netstandard2.0\ModelsConverter.AssemblyInfo.cs
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\obj\Debug\netstandard2.0\ModelsConverter.dll
+C:\Users\Vlad\Documents\GitHub\modelsconverter\ModelsConverter\ModelsConverter\obj\Debug\netstandard2.0\ModelsConverter.pdb
