@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vlad\\Source\\Repos\\ModelsConverter\\ModelsConverter\\ModelsConverter.csproj",
+      "projectUniqueName": "C:\\Users\\Vlad\\Documents\\GitHub\\modelsconverter\\ModelsConverter\\ModelsConverter\\ModelsConverter.csproj",
       "projectName": "ModelsConverter",
-      "projectPath": "C:\\Users\\Vlad\\Source\\Repos\\ModelsConverter\\ModelsConverter\\ModelsConverter.csproj",
+      "projectPath": "C:\\Users\\Vlad\\Documents\\GitHub\\modelsconverter\\ModelsConverter\\ModelsConverter\\ModelsConverter.csproj",
       "packagesPath": "C:\\Users\\Vlad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vlad\\Source\\Repos\\ModelsConverter\\ModelsConverter\\obj\\",
+      "outputPath": "C:\\Users\\Vlad\\Documents\\GitHub\\modelsconverter\\ModelsConverter\\ModelsConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
