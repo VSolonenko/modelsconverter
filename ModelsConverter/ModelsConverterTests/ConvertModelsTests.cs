@@ -19,10 +19,11 @@ namespace ModelsConverterTests
         [TestMethod]
         public void ConvertFirstModelTest()
         {
-            var model = new FirstModel(1, "first", "first description");
-            if (_modelsConverter.TryConvert<FirstModel, SecondModel>(model, out var result))
+            var model = new Address(1, "Ukraine", "Odessa", "volzkyu ln", "6");
+            if (_modelsConverter.TryConvert<Address, AddressViewModel>(model, out var result))
             {
-                Assert.IsTrue(result.Id == model.Id && result.Name == model.Name && result.Description == model.Description);
+                Assert.IsTrue(result.Id == model.Id && result.Street == model.Street && result.Number == model.Number);
+                Assert.IsTrue(result.Country == model.Country && result.City == model.City);
             }
             else
             {
@@ -32,10 +33,11 @@ namespace ModelsConverterTests
         [TestMethod]
         public void ConvertSecondModelTest()
         {
-            var model = new SecondModel(2, "second", "second description");
-            if (_modelsConverter.TryConvert<SecondModel, FirstModel>(model, out var result))
+            var model = new AddressViewModel(2, "Ukraine", "Odessa", "volzkyu ln", "8");
+            if (_modelsConverter.TryConvert<AddressViewModel, Address>(model, out var result))
             {
-                Assert.IsTrue(result.Id == model.Id && result.Name == model.Name && result.Description == model.Description);
+                Assert.IsTrue(result.Id == model.Id && result.Street == model.Street && result.Number == model.Number);
+                Assert.IsTrue(result.Country == model.Country && result.City == model.City);
             }
             else
             {
@@ -45,17 +47,17 @@ namespace ModelsConverterTests
         [TestMethod]
         public void ConvertCollectionTest()
         {
-            var collection = new List<FirstModel>
+            var collection = new List<Address>
             {
-                new FirstModel(1, "1", "1"),
-                new FirstModel(2, "2", "2"),
-                new FirstModel(3, "3", "3"),
-                new FirstModel(4, "4", "4"),
-                new FirstModel(5, "5", "5"),
-                new FirstModel(6, "6", "6"),
-                new FirstModel(7, "7", "7")
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "6"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "2"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "8"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "14"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "16"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "20"),
+                new Address(1, "Ukraine", "Odessa", "Deribasovskaya", "25")
             };
-            if (_modelsConverter.TryConvert<FirstModel, SecondModel>(collection, out var result))
+            if (_modelsConverter.TryConvert<Address, AddressViewModel>(collection, out var result))
             {
               
                 if (collection.Count != result.Count())
@@ -67,7 +69,8 @@ namespace ModelsConverterTests
                     var resultList = result.ToList();
                     for (int i = 0; i < result.Count(); i++)
                     {
-                        Assert.IsTrue(collection[i].Id == resultList[i].Id && collection[i].Name == resultList[i].Name && collection[i].Description == resultList[i].Description);
+                        Assert.IsTrue(collection[i].Id == resultList[i].Id && collection[i].Street == resultList[i].Street && collection[i].Number == resultList[i].Number);
+                        Assert.IsTrue(collection[i].Country == resultList[i].Country && collection[i].City == resultList[i].City);
                     }
                 }
 

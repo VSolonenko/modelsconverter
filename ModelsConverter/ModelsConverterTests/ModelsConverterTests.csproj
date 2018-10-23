@@ -49,9 +49,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FirstModel.cs" />
+    <Compile Include="Address.cs" />
     <Compile Include="FirstModelConverter.cs" />
-    <Compile Include="SecondModel.cs" />
+    <Compile Include="AddressViewModel.cs" />
     <Compile Include="ConvertModelsTests.cs" />
   </ItemGroup>
   <ItemGroup>
