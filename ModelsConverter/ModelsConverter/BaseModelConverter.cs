@@ -19,6 +19,16 @@ namespace ModelsConverter
             }
             return null;
         }
+        protected BaseModelConverter(Type firstType, Type secondType, Func<object, object> convertMethod, Func<object, object> reverseConvertMethod)
+        {
+            FirstType = firstType;
+            SecondType = secondType;
+            ConvertMethod = convertMethod;
+            ReverseConvertMethod = reverseConvertMethod;
+        }
+        protected BaseModelConverter(Type firstType, Type secondType) : this(firstType, secondType, null, null)
+        {
+        }
         public bool TryConvert(object source, out object result, Type resultType)
         {
             var isConverted = false;
